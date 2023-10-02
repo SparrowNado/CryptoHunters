@@ -120,6 +120,7 @@ nav a:hover::before{
     display: flex;
     align-items: center;
     cursor: pointer;
+    
 
    
 }
@@ -129,6 +130,71 @@ nav a:hover::before{
 {
     animation: flipV 1s linear;
 }
+
+
+
+.hamburger-icon{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.navbartop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .navbartop{
+        display: none; /* Hides it in bigger resolutions */
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(240, 219, 79);
+        position: absolute;
+        top: 80px; 
+        left: 200px;
+        
+        
+    }
+
+    .hamburger-icon {
+        display: block; 
+    }
+
+ 
+    .hamburger-icon img {
+        width: 30px; 
+        height: 30px;
+    }
+}
+
+
+
+.navbartop.active {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes flipV {
@@ -274,7 +340,7 @@ nav a:hover::before{
 
 .button-89:active {
   background: var(--color);
-  color: #fff;
+  color: rgb(240, 219, 79);
 }
 
 
@@ -328,7 +394,7 @@ nav a:hover::before{
     background-color: rgb(255, 255, 255);
 
 
-    transition: transform .2s;
+    transition: transform .5s;
     cursor: pointer;
     
 }
