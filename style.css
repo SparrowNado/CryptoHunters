@@ -227,8 +227,8 @@ nav a:hover::before{
 
 
 .heropage{
-   background-color:  rgb(240, 219, 79);
-
+    background-color: rgb(240, 219, 79);
+   
 }
 
 .hero-container{
@@ -271,17 +271,17 @@ nav a:hover::before{
 
 }
 
-.right-hero img{
+/* .right-hero img{
     transition: transform .2s;
     
     /* margin:0 auto; */
     
    
-}
+/* }
 
 .right-hero img:hover{
     transform: scale(1.5);
-}
+} */ 
 
 
 .heroart{
@@ -358,8 +358,8 @@ nav a:hover::before{
 .aboutus{
     text-align: center;
     line-height: 0.8;
-    /* padding-bottom: 5%;
-    padding-top: 10%; */
+    padding-bottom: 3rem;
+    /* padding-top: 10%; */ 
     background-color: rgb(240, 219, 79);
     
 }
