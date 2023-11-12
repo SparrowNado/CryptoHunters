@@ -227,7 +227,10 @@ nav a:hover::before{
 
 
 .heropage{
-   background-color:  rgb(240, 219, 79);
+   /* background-color:  rgb(240, 219, 79); */
+    background-image: url(/assets/images/CH_SBG_SF_2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -246,13 +249,13 @@ nav a:hover::before{
     justify-content: center;
     align-items: flex-start;
     padding: 0rem 2rem;
-    color: rgb(50, 51, 48);
+    color: rgb(255, 255, 255);
 }
 
 
 .left-hero h1{
     padding-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 5rem;
 
 }
 
@@ -260,7 +263,7 @@ nav a:hover::before{
     padding-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 1.5;
-    color: rgb(50, 51, 48);
+    color: rgb(255, 255, 255);
 }
 
 .right-hero{
@@ -296,6 +299,18 @@ nav a:hover::before{
     }
   }
 
+@media screen and (max-width: 768px) {
+    .left-hero h1 {
+      font-size: 4rem;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .right-hero img {
+      display: none;
+    }
+  }
+
 
 
 
@@ -312,7 +327,7 @@ nav a:hover::before{
 .button-89 {
   --b: 3px;   /* border thickness */
   --s: .45em; /* size of the corner */
-  --color: #373B44;
+  --color: #ffffff;
   
   padding: calc(.5em + var(--s)) calc(.9em + var(--s));
   color: var(--color);
