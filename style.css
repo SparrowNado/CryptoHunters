@@ -348,6 +348,7 @@ nav a:hover::before{
 
 .about{
     background-color: rgb(240, 219, 79);
+    padding-bottom: 4%;
 }
 
 .about-container{
@@ -576,7 +577,8 @@ input{
 }
 
 
-label{
+label
+{
     font-size: 15px;
     color: #F0DB4F;
 }
@@ -591,3 +593,79 @@ label{
     cursor: pointer;
 
 }
+
+
+
+
+/* FAQ CSS */
+.faqheader 
+{
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 4rem;
+}
+
+.faqbg
+{
+    background-color: #F0DB4F;
+}
+    
+  .accordion 
+{
+    width: 1000px;
+    margin: 20px auto;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+}
+
+  .accordion .container 
+{
+  position: relative;
+  margin: 10px 10px;
+}
+
+.accordion .label 
+{
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.accordion .label::before {
+    content: '-';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid rgb(240, 219, 79);
+  }
+
+.accordion .container.active .content {
+    height: 150px;
+  }
+  
+  .accordion .container.active .label::before {
+    content: '=';
+    font-size: 30px;
+  }
