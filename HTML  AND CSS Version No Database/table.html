@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <title>CryptoHunter Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/other.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbartable.css">
+  </head>
+  <body >
+
+    <video autoplay muted loop id="myVideo">
+      <source src="images/videobg.mp4" type="video/mp4">
+    </video>
+
+    <!-- Header -->
+    <!-- <div class="container-fluid bg-primary py-2" style="z-index: 100; background:transparent;">
+      <header class="container py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-6 d-flex align-items-center mb-2 mb-md-0">
+            <a class="d-flex align-items-center mb-2 mb-md-0 h4 text-white text-decoration-none text-uppercase" href="/">
+              CryptoHunter
+            </a>
+          </div>
+        
+        </div>
+      </header>
+    </div> -->
+
+
+    <header class="header">
+      <nav class="navbar" style="color:black">
+          <a href="#" class="nav-logo" style="color:black">CryptoHunters</a>
+         
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="index.php" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="login.php" class="nav-link">Login</a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="register.php" class="nav-link">Register</a>
+              </li>
+             
+              <li class="nav-item">
+                  <a href="logout.php" class="nav-link">Logout</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+
+
+
+
+
+
+
+    <div  class="container-fluid bg-dark py-1">
+      <div class="container nav-scroller mt-2 mb-2">
+       
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Today's date -->
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-white mt-3 ms-2">
+            <h1>Let's Assess what we have</h1>
+            <span class="text-secondary">Today:</span>
+            
+            <span id="date"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Today's date -->
+    
+    <!-- Main -->
+    <main class="container py-3">
+
+      <!-- Statistics -->
+      <div class="row mb-2">
+
+        <div class="col-md-6 col-xl-3">
+          <div class="card bg-dark p-4 mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-secondary">
+                    Categories
+                  </h5>
+                  <span id="categories" class="h2 text-white font-weight-bold"></span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-primary text-white rounded-circle">
+                    <i class="fa-solid fa-coins fa-lg"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="card bg-dark p-4 mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-secondary">
+                    Exchanges
+                  </h5>
+                  <span id="exchanges" class="h2 text-white font-weight-bold"></span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-warning text-white rounded-circle">
+                    <i class="fa-solid fa-chart-area fa-lg"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="card bg-dark p-4 mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-secondary">
+                    Platforms
+                  </h5>
+                  <span id="platforms" class="h2 text-white font-weight-bold"></span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-success text-white rounded-circle">
+                    <i class="fa-solid fa-chart-pie fa-lg"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="card bg-dark p-4 mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-secondary">
+                    Indexes
+                  </h5>
+                  <span id="indexes" class="h2 text-white font-weight-bold"></span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle">
+                    <i class="fa-solid fa-chart-column fa-lg"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Statistics -->
+
+      <!-- Table -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card bg-dark p-4 mb-4">
+            <div class="card-body">
+              <div id="crypto" class="table-responsive"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Table -->
+    
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer class="text-center text-secondary py-4">
+      <div class="container" style="color: white;">
+        Copyright &copy; 2023 CryptoHunter Foundation. Data & API provided by <a class="text-decoration-none" href="https://www.coingecko.com/" alt="CoinGecko"
+        target="_blank">CoinGecko</a>.
+      </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <!-- Scripts -->
+
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
+
+
+
+<script src="burger.js"></script>

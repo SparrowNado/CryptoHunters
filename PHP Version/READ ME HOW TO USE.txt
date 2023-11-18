@@ -1,0 +1,8 @@
+
+Put the entire contents of this folder inside a folder named to your  in  xamp install/htdocs/yourfolder
+
+use XAMP then go to php my admin and import logincrypto.sql 
+
+go to browser and type  localhost/yourfolder/index.php
+
+you are done
